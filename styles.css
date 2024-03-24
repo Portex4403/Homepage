@@ -1,34 +1,63 @@
-body{
+html, body{
     margin: 0px;
-    background-color:lightgray;
+    height: 100%;
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
 }
 .balken{
     display: flex;
-    background-color: limegreen;
+    background-color: #EE82EE;
     height: 80px;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 .balken > a{
     text-decoration: none;
     font-size: xx-large;
 }
-.flex-container{
+.Box{
+    min-height: 400px;
+    min-width: 300px;
+    background-color:rgba(0,0,0,0.5) ;
+    border: solid 5px #EE82EE;
+
+}
+.Box > ul > li {
     display: flex;
-    margin:20px;
     justify-content: center;
+    list-style-type: none;
 }
-.profil{
-    width: 500px;
-    background-color:#ffffff ;
-    margin:0px;
-    border: solid 1px black;
+.Box > ul > li > a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #EE82EE;
 }
-.profil > p{
-    margin: 0px;
-    text-align: center;
-    font-size: larger;
+.Box > div > p{
+    display: flex;
+    justify-content: center;
+    color: #EE82EE;
+    font-size: x-large;
+
 }
-.profil > img{
-    border-bottom: solid 1px black;
+.AllgContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    background-image: url('bild webseite.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+.Box > ul{
+    padding:0;
+}
+.Überschrift-Box{
+    border-bottom: solid 5px #EE82EE;
 }
