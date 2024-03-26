@@ -1,97 +1,153 @@
-html, body{
-margin: 0px;
-height: 100%;
-font-size: 15px;
-font-family: 'perso1', Tahoma, Geneva, Verdana, sans-serif;
-background-image: url('bilder/bild\ webseite.jpg');
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
+html,
+body {
+  margin: 0px;
+  height: 100%;
+  font-size: 15px;
+  font-family: perso1, Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url("./bilder/bild_webseite.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-.Box{
-border-top-right-radius: 10%;
-border-top-left-radius: 10%;
-border-bottom-left-radius: 10%;
-border-bottom-right-radius: 10%;
-height: 350px;
-min-width: 200px;
-max-width: fit-content;
-background-color:rgba(0,0,0,0.5) ;
-border: solid 2px turquoise;
-box-shadow: 1px 1px 1px 1px black;
+.Box {
+  border-top-right-radius: 10%;
+  border-top-left-radius: 10%;
+  border-bottom-left-radius: 10%;
+  border-bottom-right-radius: 10%;
+  height: 350px;
+  min-width: 200px;
+  max-width: fit-content;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: solid 2px turquoise;
+  box-shadow: 1px 1px 1px 1px black;
 }
 .Box > ul > li {
-display: flex;
-justify-content: center;
-list-style-type: none;
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
 }
-.Box > ul > li > a{
-display: flex;
-align-items: center;
-text-decoration: none;
-color: rgb(185, 185, 185);
-margin-top: 7px;
-font-size: x-large;
-transition: all .5s ease-in-out;
+.Box > ul > li > a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: rgb(185, 185, 185);
+  margin-top: 7px;
+  font-size: x-large;
+  transition: all 0.5s ease-in-out;
 }
-.Box > div > p{
-display: flex;
-justify-content: center;
-color: turquoise;
-font-size: xx-large;
-font-weight: bold;
-
+.Box > div > p {
+  display: flex;
+  justify-content: center;
+  color: turquoise;
+  font-size: xx-large;
+  font-weight: bold;
 }
-.AllgContainer{
-margin-top: 10px;
-display: flex;
-justify-content: space-evenly;
-align-items: center;
-justify-content: space-evenly;
+.AllgContainer {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  justify-content: space-evenly;
 }
-.Box > ul{
-padding:0;
+.Box > ul {
+  padding: 0;
 }
-.Überschrift-Box{
-border-bottom: solid 2px turquoise;
+.Überschrift-Box {
+  border-bottom: solid 2px turquoise;
 }
-.Uhr{
-display: flex;
-font-family: perso2 , Tahoma, sans-serif;
-font-size: 120px;
-justify-content: center;
-align-items: center;
-color: turquoise;
-text-shadow: 1px 1px 1px 1px black;
+.Uhr {
+  display: flex;
+  font-family: perso2, Tahoma, sans-serif;
+  font-size: 120px;
+  justify-content: center;
+  align-items: center;
+  color: turquoise;
+  text-shadow: 1px 1px 1px 1px black;
 }
-.Box > ul > li > a:hover{
-color:aqua;
-font-size: 1.5rem;;
+.Box > ul > li > a:hover {
+  color: aqua;
+  font-size: 1.5rem;
 }
-.chuck{
-    display: flex;
-    justify-content: center;
-
+.chuck {
+  display: flex;
+  justify-content: center;
 }
-#joke{
-    font-size: xx-large;
-    background-color: rgba(0,0,0,0.5);
-    color: turquoise;
+#joke {
+  font-size: xx-large;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: turquoise;
 }
 @font-face {
-    font-family: perso;
-    src: url(fonts/static/EduNSWACTFoundation-Regular.ttf);
-    font-family: perso2;
-    src: url(fonts/static2/SpaceGrotesk-Regular.ttf);
+  font-family: perso1;
+  src: url(./fonts/static/EduNSWACTFoundation-Regular.ttf);
+  font-weight: 400;
 }
-@media only screen and(max-width: 838px){
-    body{
-        overflow-y: scoll;
-        height: fit-content;
-    }
-    main{
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-    }
+@font-face {
+  font-family: perso1;
+  src: url(./fonts/static/EduNSWACTFoundation-Medium.ttf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: perso1;
+  src: url(./fonts/static/EduNSWACTFoundation-SemiBold.ttf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: perso1;
+  src: url(./fonts/static/EduNSWACTFoundation-Bold.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: perso2;
+  src: url(fonts/static2/SpaceGrotesk-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: perso2;
+  src: url(fonts/static2/SpaceGrotesk-Medium.ttf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: perso2;
+  src: url(fonts/static2/SpaceGrotesk-SemiBold.ttf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: perso2;
+  src: url(fonts/static2/SpaceGrotesk-Bold.ttf);
+  font-weight: 700;
+}
+@media only screen and (max-width: 1100px) {
+  body {
+    overflow-y: scoll;
+    height: fit-content;
+  }
+  /* Meine OG Flexbox Regel */
+  /* .AllgContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  } */
+  /* Alternative: Gridlayout */
+  .AllgContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5vw;
+    place-items: center;
+    margin: 7vw;
+  }
+  .Box {
+    width: 100%;
+    max-width: none;
+    height: 100%;
+  }
+  .Box > ul > li > a {
+    font-size: 2em;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .Box > ul > li > a {
+    font-size: 1.5em;
+  }
 }
