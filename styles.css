@@ -1,0 +1,95 @@
+html, body{
+margin: 0px;
+height: 100%;
+font-size: 15px;
+font-family: 'perso1', Tahoma, Geneva, Verdana, sans-serif;
+background-image: url('bilder/bild\ webseite.jpg');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+.Box{
+border-top-right-radius: 10%;
+border-top-left-radius: 10%;
+border-bottom-left-radius: 10%;
+border-bottom-right-radius: 10%;
+height: 350px;
+min-width: 200px;
+max-width: fit-content;
+background-color:rgba(0,0,0,0.5) ;
+border: solid 2px turquoise;
+box-shadow: 1px 1px 1px 1px black;
+}
+.Box > ul > li {
+display: flex;
+justify-content: center;
+list-style-type: none;
+}
+.Box > ul > li > a{
+display: flex;
+align-items: center;
+text-decoration: none;
+color: rgb(185, 185, 185);
+margin-top: 7px;
+font-size: x-large;
+transition: all .5s ease-in-out;
+}
+.Box > div > p{
+display: flex;
+justify-content: center;
+color: turquoise;
+font-size: xx-large;
+font-weight: bold;
+
+}
+.AllgContainer{
+margin-top: 10px;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+justify-content: space-evenly;
+}
+.Box > ul{
+padding:0;
+}
+.Überschrift-Box{
+border-bottom: solid 2px turquoise;
+}
+.Uhr{
+display: flex;
+font-family: perso2 , Tahoma, sans-serif;
+font-size: 120px;
+justify-content: center;
+align-items: center;
+color: turquoise;
+background-color: rgba(0,0,0,0.8);
+}
+.Box > ul > li > a:hover{
+color:aqua;
+font-size: 1.5rem;;
+}
+.chuck{
+display: flex;
+justify-content: center;
+
+}
+#joke{
+font-size: xx-large;
+background-color: rgba(0,0,0,0.5);
+color: turquoise;
+}
+@font-face {
+font-family: perso;
+src: url(fonts/static/EduNSWACTFoundation-Regular.ttf);
+font-family: perso2;
+src: url(fonts/static2/SpaceGrotesk-Regular.ttf);
+}
+@media only screen and (max-width: 1022px) {
+body {
+    overflow-y: scroll;
+    height: fit-content;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+}
